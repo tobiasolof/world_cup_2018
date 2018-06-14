@@ -1,0 +1,8 @@
+South Korea,Korea Republic
+Holland,Netherlands
+North Korea,Korea DPR
+Bosnia and Herzegovina,Bosnia-Herzegovina
+Serbia and Montenegro,Serbia
+Yugoslavia,Serbia
+United States,USA
+Republic of Ireland,Ireland

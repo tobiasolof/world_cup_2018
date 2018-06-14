@@ -1,0 +1,32 @@
+SHAPE
+ - 216 observations
+ - 13 variables
+
+VARIABLES
+ - cnty: Country name
+ - abbr: Three letter country abbreviation (ISO 3166-1 alpha-3)
+ - year: Year
+ - rank: FIFA World Ranking in the month closest to the World Cup in given year
+ - part: Total number of participated FIFA World Cups before the World Cup in given year
+ - ppct: Participated percentage of all FIFA World Cups before the World Cup in given year
+ - gply: Total games played in FIFA World Cup before the World Cup in given year
+ - wins: Total won games in FIFA World Cup before the World Cup in given year
+ - draw: Total draws in FIFA World Cup before the World Cup in given year
+ - lost: Total lost games in FIFA World Cup before the World Cup in given year
+ - gold: Total gold medals in FIFA World Cup before the World Cup in given year
+ - slvr: Total silver medals in FIFA World Cup before the World Cup in given year
+ - brnz: Total bronze medals in FIFA World Cup before the World Cup in given year
+ 
+NOTES
+ - The earliest FIFA World Cup in the data set is 1994. This is because of the limitation
+   on FIFA World Ranking data
+ - West Germany replaced by Germany
+ - Czechoslovakia replaced by Czech Republic
+ - FR of Yugoslavia replaced by Serbia
+ - Yugoslavia replaced by Serbia
+ - Serbia and Montenegro replaced by Serbia
+ - Soviet Union replaced by Russia
+ 
+ SOURCES
+ - https://www.fifa.com/fifa-world-ranking/
+ - http://thesoccerworldcups.com/
