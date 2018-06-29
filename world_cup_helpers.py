@@ -245,6 +245,7 @@ def _sum_up_group(group, win_factor=WIN_FACTOR, pred_scores='unplayed_only'):
         
         # Decide which columns to base calculations on
         home_score_col, away_score_col = get_score_cols(row, pred_scores)
+        tmp_win_factor = 1.0 if home_score_col == 'home_score' else win_factor
         
         # Update scored, conceded and goal difference
         group_dict[row.home_team]['scored'] += row[home_score_col]
@@ -254,9 +255,9 @@ def _sum_up_group(group, win_factor=WIN_FACTOR, pred_scores='unplayed_only'):
         group_dict[row.away_team]['conceded'] += row[home_score_col]
         group_dict[row.away_team]['diff'] += row[away_score_col] - row[home_score_col]
         # Update points
-        if row[home_score_col] > (win_factor * row[away_score_col]):
+        if row[home_score_col] > (tmp_win_factor * row[away_score_col]):
             group_dict[row.home_team]['points'] += 3
-        elif (win_factor * row[away_score_col]) < row[home_score_col]:
+        elif row[away_score_col] > (tmp_win_factor * row[home_score_col]):
             group_dict[row.away_team]['points'] += 3
         else:
             group_dict[row.home_team]['points'] += 1
